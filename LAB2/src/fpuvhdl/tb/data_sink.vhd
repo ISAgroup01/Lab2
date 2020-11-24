@@ -3,7 +3,6 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 use ieee.std_logic_textio.all;
-use WORK.fir_package.all;
 
 library std;
 use std.textio.all;
@@ -12,8 +11,7 @@ entity data_sink is
   port (
     CLK   : in std_logic;
     RST_n : in std_logic;
-    VIN   : in std_logic;
-    DIN   : in std_logic_vector(nb-1 downto 0));
+    DIN   : in std_logic_vector(31 downto 0));
 end data_sink;
 
 architecture beh of data_sink is
@@ -21,7 +19,7 @@ architecture beh of data_sink is
 begin  -- beh
 
   process (CLK, RST_n)
-    file res_fp : text open WRITE_MODE is "../../results_vhdl.txt";
+    file res_fp : text open WRITE_MODE is "../src/results_vhdl_INregs.txt";
     variable line_out : line;
   begin  -- process
     if RST_n = '0' then                 -- asynchronous reset (active low)

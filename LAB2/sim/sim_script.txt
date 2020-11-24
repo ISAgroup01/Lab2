@@ -2,6 +2,7 @@ vcom -93 -work ./work ../src/fpuvhdl/common/fpnormalize_fpnormalize.vhd
 vcom -93 -work ./work ../src/fpuvhdl/common/fpround_fpround.vhd
 vcom -93 -work ./work ../src/fpuvhdl/common/packfp_packfp.vhd
 vcom -93 -work ./work ../src/fpuvhdl/common/unpackfp_unpackfp.vhd
+vcom -93 -work ./work ../src/fpuvhdl/common/reg.vhd
 vcom -93 -work ./work ../src/fpuvhdl/multiplier/fpmul_stage1_struct.vhd
 vcom -93 -work ./work ../src/fpuvhdl/multiplier/fpmul_stage2_struct.vhd
 vcom -93 -work ./work ../src/fpuvhdl/multiplier/fpmul_stage3_struct.vhd

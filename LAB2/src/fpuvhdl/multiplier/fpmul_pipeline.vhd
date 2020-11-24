@@ -72,6 +72,10 @@ ARCHITECTURE pipeline OF FPmul IS
    SIGNAL isZ_tab_stage1  : std_logic;
    SIGNAL isZ_tab_stage2  : std_logic;
 
+   SIGNAL fp_a1           : std_logic_vector(31 DOWNTO 0);
+   SIGNAL fp_a2           : std_logic_vector(31 DOWNTO 0);
+   SIGNAL fp_b1           : std_logic_vector(31 DOWNTO 0);
+   SIGNAL fp_b2           : std_logic_vector(31 DOWNTO 0);
 
    -- Component Declarations
    COMPONENT FPmul_stage1
@@ -146,22 +150,40 @@ ARCHITECTURE pipeline OF FPmul IS
    );
    END COMPONENT;
 
+   COMPONENT REG
+   Port (
+     REG_IN    :	IN  std_logic_vector (31 DOWNTO 0);
+	 REG_EN    :	In	 std_logic;
+	 REG_CLK   :	In	 std_logic;
+     REG_RESET :	In	 std_logic;
+     REG_OUT   :    OUT  std_logic_vector (31 DOWNTO 0));
+   END COMPONENT;
+
    -- Optional embedded configurations
    -- pragma synthesis_off
    FOR ALL : FPmul_stage1 USE ENTITY work.FPmul_stage1;
    FOR ALL : FPmul_stage2 USE ENTITY work.FPmul_stage2;
    FOR ALL : FPmul_stage3 USE ENTITY work.FPmul_stage3;
    FOR ALL : FPmul_stage4 USE ENTITY work.FPmul_stage4;
+   --FOR ALL : REG USE ENTITY work.REG;
    -- pragma synthesis_on
 
 
 BEGIN
 
+---------------------------------------------
+	--Input registers
+	  FF_A1 : REG port map(REG_IN => FP_A,  REG_EN => '1', REG_CLK => clk, REG_RESET => '1', REG_OUT => fp_a1);
+	  FF_A2 : REG port map(REG_IN => fp_a1, REG_EN => '1', REG_CLK => clk, REG_RESET => '1', REG_OUT => fp_a2);
+	  FF_B1 : REG port map(REG_IN => FP_B,  REG_EN => '1', REG_CLK => clk, REG_RESET => '1', REG_OUT => fp_b1);
+	  FF_B2 : REG port map(REG_IN => fp_b1, REG_EN => '1', REG_CLK => clk, REG_RESET => '1', REG_OUT => fp_b2);
+
+----------------------------------------------
    -- Instance port mappings.
    I1 : FPmul_stage1
       PORT MAP (
-         FP_A            => FP_A,
-         FP_B            => FP_B,
+         FP_A            => fp_a2,
+         FP_B            => fp_b2,
          clk             => clk,
          A_EXP           => A_EXP,
          A_SIG           => A_SIG,

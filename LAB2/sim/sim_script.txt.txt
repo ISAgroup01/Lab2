@@ -1,0 +1,14 @@
+vcom -93 -work ./work ../src/fpuvhdl/common/fpnormalize_fpnormalize.vhd
+vcom -93 -work ./work ../src/fpuvhdl/common/fpround_fpround.vhd
+vcom -93 -work ./work ../src/fpuvhdl/common/packfp_packfp.vhd
+vcom -93 -work ./work ../src/fpuvhdl/common/unpackfp_unpackfp.vhd
+vcom -93 -work ./work ../src/fpuvhdl/multiplier/fpmul_stage1_struct.vhd
+vcom -93 -work ./work ../src/fpuvhdl/multiplier/fpmul_stage2_struct.vhd
+vcom -93 -work ./work ../src/fpuvhdl/multiplier/fpmul_stage3_struct.vhd
+vcom -93 -work ./work ../src/fpuvhdl/multiplier/fpmul_stage4_struct.vhd
+vcom -93 -work ./work ../src/fpuvhdl/multiplier/fpmul_pipeline.vhd
+vcom -93 -work ./work ../src/fpuvhdl/tb/clk_gen.vhd
+vcom -93 -work ./work ../src/fpuvhdl/tb/data_maker.vhd
+vcom -93 -work ./work ../src/fpuvhdl/tb/data_sink.vhd
+vcom -93 -work ./work ../src/fpuvhdl/tb/TB_fpmultiplier.vhd
+vsim work.TB_FPmul

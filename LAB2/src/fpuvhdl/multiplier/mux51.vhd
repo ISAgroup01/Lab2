@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 
 entity mux51_generic is
 
-  generic n := 32;
+  generic (n : integer := 32);
   Port(
     mux_in0    : in std_logic_vector(n-1 downto 0);
     mux_in1    : in std_logic_vector(n-1 downto 0);

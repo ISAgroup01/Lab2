@@ -76,6 +76,10 @@ ARCHITECTURE pipeline OF FPmul IS
    SIGNAL fp_a2           : std_logic_vector(31 DOWNTO 0);
    SIGNAL fp_b1           : std_logic_vector(31 DOWNTO 0);
    SIGNAL fp_b2           : std_logic_vector(31 DOWNTO 0);
+   SIGNAL fp_out          : std_logic_vector(31 DOWNTO 0);
+   SIGNAL fp_out1         : std_logic_vector(31 DOWNTO 0);
+   SIGNAL fp_out2         : std_logic_vector(31 DOWNTO 0);
+   SIGNAL fp_out3         : std_logic_vector(31 DOWNTO 0);
 
    -- Component Declarations
    COMPONENT FPmul_stage1
@@ -173,17 +177,17 @@ BEGIN
 
 ---------------------------------------------
 	--Input registers
-	  FF_A1 : REG port map(REG_IN => FP_A,  REG_EN => '1', REG_CLK => clk, REG_RESET => '1', REG_OUT => fp_a1);
-	  FF_A2 : REG port map(REG_IN => fp_a1, REG_EN => '1', REG_CLK => clk, REG_RESET => '1', REG_OUT => fp_a2);
-	  FF_B1 : REG port map(REG_IN => FP_B,  REG_EN => '1', REG_CLK => clk, REG_RESET => '1', REG_OUT => fp_b1);
-	  FF_B2 : REG port map(REG_IN => fp_b1, REG_EN => '1', REG_CLK => clk, REG_RESET => '1', REG_OUT => fp_b2);
+	  --FF_A1 : REG port map(REG_IN => FP_A,  REG_EN => '1', REG_CLK => clk, REG_RESET => '1', REG_OUT => fp_a1);
+	  --FF_A2 : REG port map(REG_IN => fp_a1, REG_EN => '1', REG_CLK => clk, REG_RESET => '1', REG_OUT => fp_a2);
+	  --FF_B1 : REG port map(REG_IN => FP_B,  REG_EN => '1', REG_CLK => clk, REG_RESET => '1', REG_OUT => fp_b1);
+	  --FF_B2 : REG port map(REG_IN => fp_b1, REG_EN => '1', REG_CLK => clk, REG_RESET => '1', REG_OUT => fp_b2);
 
 ----------------------------------------------
    -- Instance port mappings.
    I1 : FPmul_stage1
       PORT MAP (
-         FP_A            => fp_a2,
-         FP_B            => fp_b2,
+         FP_A            => FP_A,
+         FP_B            => FP_B,
          clk             => clk,
          A_EXP           => A_EXP,
          A_SIG           => A_SIG,
@@ -248,4 +252,8 @@ BEGIN
          FP_Z          => FP_Z
       );
 
+--	  FF_OUT : REG port map(REG_IN => fp_out, REG_EN => '1', REG_CLK => clk, REG_RESET => '1', REG_OUT => fp_out1);
+	--- FF_OUT : REG port map(REG_IN => fp_out1, REG_EN => '1', REG_CLK => clk, REG_RESET => '1', REG_OUT => fp_out2);
+--	  FF_OUT : REG port map(REG_IN => fp_out2, REG_EN => '1', REG_CLK => clk, REG_RESET => '1', REG_OUT => fp_out3);
+--	  FF_OUT : REG port map(REG_IN => fp_out3, REG_EN => '1', REG_CLK => clk, REG_RESET => '1', REG_OUT => FP_Z);
 END pipeline;

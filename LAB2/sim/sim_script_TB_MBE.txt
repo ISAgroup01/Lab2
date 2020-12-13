@@ -1,0 +1,6 @@
+vcom -93 -work ./work ../src/fpuvhdl/multiplier/mux51.vhd
+vcom -93 -work ./work ../src/fpuvhdl/multiplier/BEU.vhd
+vcom -93 -work ./work ../src/fpuvhdl/multiplier/MBE_mod.vhd
+vcom -93 -work ./work ../src/fpuvhdl/tb/tb_MBE.vhd
+
+vsim work.tb_MBE

@@ -38,8 +38,8 @@ component HA
 end component;
 type type_level3 is array (9-1  downto 0) of std_logic_vector(64-1 downto 0); -- array 9*64
 type type_level4 is array (6-1  downto 0) of std_logic_vector(64-1 downto 0); -- array 6*64
-signal matrix3 : type_level3 := (others => (others => '0')); --matrix level 3
-signal matrix4 : type_level4 := (others => (others => '0')); --matrix level 4
+signal matrix3 : type_level3;-- := (others => (others => '0')); --matrix level 3
+signal matrix4 : type_level4;-- := (others => (others => '0')); --matrix level 4
 begin
 	matrix3(0)  <= ivect0;
 	matrix3(1)  <= ivect1;

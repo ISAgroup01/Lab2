@@ -7,25 +7,25 @@ use ieee.numeric_std.all;
 
 entity Dadda is
 	Port (PP0      : IN   std_logic_vector(32 downto 0);
-		   PP1      : IN   std_logic_vector(32 downto 0);
-		   PP2      : IN   std_logic_vector(32 downto 0);
-			PP3      : IN   std_logic_vector(32 downto 0);
-			PP4      : IN   std_logic_vector(32 downto 0);
-			PP5      : IN   std_logic_vector(32 downto 0);
-			PP6      : IN   std_logic_vector(32 downto 0);
-			PP7      : IN   std_logic_vector(32 downto 0);
-			PP8      : IN   std_logic_vector(32 downto 0);
-			PP9      : IN   std_logic_vector(32 downto 0);
-			PP10     : IN   std_logic_vector(32 downto 0);
-			PP11     : IN   std_logic_vector(32 downto 0);
-			PP12     : IN   std_logic_vector(32 downto 0);
-			PP13     : IN   std_logic_vector(32 downto 0);
-			PP14     : IN   std_logic_vector(32 downto 0);
-			PP15     : IN   std_logic_vector(32 downto 0);
-			E        : IN   std_logic_vector(16-1 downto 0);
-			S        : IN   std_logic_vector(16-1 downto 0);
-			PRODUCT1 : OUT  std_logic_vector(64-1 downto 0);
-			PRODUCT2 : OUT  std_logic_vector(64-1 downto 0));
+		  PP1      : IN   std_logic_vector(32 downto 0);
+		  PP2      : IN   std_logic_vector(32 downto 0);
+		  PP3      : IN   std_logic_vector(32 downto 0);
+		  PP4      : IN   std_logic_vector(32 downto 0);
+		  PP5      : IN   std_logic_vector(32 downto 0);
+		  PP6      : IN   std_logic_vector(32 downto 0);
+		  PP7      : IN   std_logic_vector(32 downto 0);
+		  PP8      : IN   std_logic_vector(32 downto 0);
+		  PP9      : IN   std_logic_vector(32 downto 0);
+		  PP10     : IN   std_logic_vector(32 downto 0);
+		  PP11     : IN   std_logic_vector(32 downto 0);
+		  PP12     : IN   std_logic_vector(32 downto 0);
+		  PP13     : IN   std_logic_vector(32 downto 0);
+		  PP14     : IN   std_logic_vector(32 downto 0);
+		  PP15     : IN   std_logic_vector(32 downto 0);
+		  E        : IN   std_logic_vector(16-1 downto 0);
+		  S        : IN   std_logic_vector(16-1 downto 0);
+		  PRODUCT1 : OUT  std_logic_vector(64-1 downto 0);
+		  PRODUCT2 : OUT  std_logic_vector(64-1 downto 0));
 end Dadda;
 
 architecture behavioral of Dadda is
@@ -37,12 +37,12 @@ type type_level5 is array (4-1  downto 0) of std_logic_vector(64-1 downto 0); --
 type type_level6 is array (3-1  downto 0) of std_logic_vector(64-1 downto 0); -- array 3*64
 type type_level7 is array (2-1  downto 0) of std_logic_vector(64-1 downto 0); -- array 2*64
 signal matrix1 : type_level1; --matrix level 1 
-signal matrix2 : type_level2 := (others => (others => '0')); --matrix level 2
-signal matrix3 : type_level3 := (others => (others => '0')); --matrix level 3
-signal matrix4 : type_level4 := (others => (others => '0')); --matrix level 4
-signal matrix5 : type_level5 := (others => (others => '0')); --matrix level 5
-signal matrix6 : type_level6 := (others => (others => '0')); --matrix level 6
-signal matrix7 : type_level7 := (others => (others => '0')); --matrix level 7
+signal matrix2 : type_level2;-- := (others => (others => '0')); --matrix level 2
+signal matrix3 : type_level3;-- := (others => (others => '0')); --matrix level 3
+signal matrix4 : type_level4;-- := (others => (others => '0')); --matrix level 4
+signal matrix5 : type_level5;-- := (others => (others => '0')); --matrix level 5
+signal matrix6 : type_level6;-- := (others => (others => '0')); --matrix level 6
+signal matrix7 : type_level7;-- := (others => (others => '0')); --matrix level 7
 
 --Component
 component FA

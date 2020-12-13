@@ -39,7 +39,7 @@ signal sig_inA    : std_logic_vector(31 downto 0);
 signal sig_inB    : std_logic_vector(31 downto 0);
 signal sig_out    : std_logic_vector(31 downto 0);
 signal sig_rst    : std_logic := '0';
-signal sig_clk    : std_logic;
+signal sig_clk    : std_logic := '0';
 
 
 BEGIN

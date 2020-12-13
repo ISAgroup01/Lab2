@@ -1,6 +1,3 @@
---INSERIRE TOP entity
---VERIFICARE IL NUMERO DI BIT PER A E X
-
 library IEEE;
 use IEEE.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -115,7 +112,8 @@ sig_2Am <= A_inv & '0'; --(-2A)
 
 --generate signals
 signal_genS: for i in 0 to 15 generate --generate S array
-  sig_S(i) <= sig_BEUout(i)(2); --MSB
+  --sig_S(i) <= sig_BEUout(i)(2); --MSB
+  sig_S(i) <= sig_BEUin(2+(2*i));
 end generate;
 
 signal_genE: for i in 0 to 15 generate

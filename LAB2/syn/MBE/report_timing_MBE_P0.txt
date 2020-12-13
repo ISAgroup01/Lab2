@@ -1,0 +1,81 @@
+Information: Updating design information... (UID-85)
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Sun Dec 13 12:36:24 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I1/A_SIG_reg[2]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: I2/SIG_in_reg[22]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MY_CLK (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  I1/A_SIG_reg[2]/CK (DFF_X1)              0.00       0.00 r
+  I1/A_SIG_reg[2]/Q (DFF_X1)               0.21       0.21 r
+  U3691/ZN (NOR2_X1)                       0.05       0.26 f
+  U3932/ZN (NAND3_X1)                      0.04       0.30 r
+  U3933/ZN (XNOR2_X1)                      0.06       0.36 r
+  U3934/Z (BUF_X1)                         0.10       0.46 r
+  U4817/ZN (NAND2_X1)                      0.04       0.50 f
+  U4819/ZN (OAI211_X1)                     0.04       0.55 r
+  U4820/ZN (NAND2_X1)                      0.05       0.60 f
+  U4832/ZN (OAI21_X1)                      0.06       0.66 r
+  U4843/ZN (AOI21_X1)                      0.03       0.70 f
+  U4845/ZN (OR2_X1)                        0.06       0.76 f
+  U4977/ZN (XNOR2_X1)                      0.06       0.83 f
+  U4978/ZN (XNOR2_X1)                      0.06       0.89 f
+  U4984/ZN (OAI21_X1)                      0.05       0.94 r
+  U2150/ZN (OAI211_X1)                     0.04       0.98 f
+  U2149/ZN (INV_X1)                        0.03       1.01 r
+  U2147/ZN (AOI21_X1)                      0.03       1.04 f
+  U2151/ZN (OAI211_X1)                     0.03       1.07 r
+  U5030/ZN (AND2_X1)                       0.04       1.11 r
+  U5087/ZN (AOI21_X1)                      0.03       1.14 f
+  U5195/ZN (OAI21_X1)                      0.04       1.17 r
+  U5332/ZN (NAND4_X1)                      0.04       1.21 f
+  U5484/ZN (NAND2_X1)                      0.03       1.25 r
+  U5660/ZN (NAND2_X1)                      0.03       1.27 f
+  U5661/ZN (NAND2_X1)                      0.03       1.30 r
+  U5772/ZN (NAND4_X1)                      0.04       1.35 f
+  U5777/ZN (NAND4_X1)                      0.04       1.38 r
+  U5778/ZN (OAI211_X1)                     0.05       1.43 f
+  U5790/Z (BUF_X2)                         0.05       1.48 f
+  U5804/ZN (NAND3_X1)                      0.03       1.52 r
+  U5805/ZN (NAND3_X1)                      0.04       1.55 f
+  U5807/ZN (XNOR2_X1)                      0.05       1.61 f
+  I2/SIG_in_reg[22]/D (DFF_X1)             0.01       1.61 f
+  data arrival time                                   1.61
+
+  clock MY_CLK (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                       -0.07      -0.07
+  I2/SIG_in_reg[22]/CK (DFF_X1)            0.00      -0.07 r
+  library setup time                      -0.04      -0.11
+  data required time                                 -0.11
+  -----------------------------------------------------------
+  data required time                                 -0.11
+  data arrival time                                  -1.61
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -1.72
+
+
+1

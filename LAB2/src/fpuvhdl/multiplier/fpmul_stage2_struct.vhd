@@ -145,7 +145,7 @@ multiplier : MBE
 	  A => A_SIG,
       X => B_SIG,
       P => prod);
-   -- ModuleWare code(v1.1) for instance 'I6' of 'vdd'
+ -- ModuleWare code(v1.1) for instance 'I6' of 'vdd'
    dout <= '1';
 
    -- Instance port mappings.

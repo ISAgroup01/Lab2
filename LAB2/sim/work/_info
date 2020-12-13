@@ -3,13 +3,13 @@ m255
 cModel Technology
 d/home/isa01/Desktop/Lab2/LAB2/sim
 T_opt
-Vk9=`QV^f2>kC7LkDoXLdL3
+VIO0[5=OMXJZaW<__9RzDA0
 06 8 2 ./work tb_fpmul tb 1
 o-quiet -auto_acc_if_foreign -work work
 tExplicit 1
 OE;O;6.2g;35
 Ebeu
-w1607179400
+w1607189330
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/fpuvhdl/multiplier/BEU.vhd
@@ -64,7 +64,7 @@ M1 ieee std_logic_unsigned
 o-93 -work ./work
 tExplicit 1
 Edadda
-w1607158256
+w1607719726
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/fpuvhdl/multiplier/CSA_tree.vhd
@@ -82,7 +82,7 @@ DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work dadda 4KPD?l@73ZUDco;Z2]_?53
 l163
 L31
-VLoogXK9E4XX9d[W8_XofL3
+Vh@emSQ:V^eLFzI0KkVlP52
 OE;C;6.2g;35
 31
 M2 ieee std_logic_1164
@@ -125,7 +125,7 @@ M1 std textio
 o-93 -work ./work
 tExplicit 1
 Edata_sink
-w1607184087
+w1607189330
 DP std textio K]Z^fghZ6B=BjnK5NomDT3
 DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
 DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
@@ -160,7 +160,7 @@ M1 std textio
 o-93 -work ./work
 tExplicit 1
 Efa
-w1607158257
+w1607189330
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/fpuvhdl/multiplier/full_adder.vhd
@@ -186,7 +186,7 @@ M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Efpmul
-w1606237242
+w1607720662
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/fpuvhdl/multiplier/fpmul_pipeline.vhd
@@ -206,9 +206,9 @@ DE work fpmul_stage1 jR1U>fXlE_ol]TT7f`[c;1
 DE work fpmul n>GG7N`A]eZ@LKmeaJ=Qh1
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-l172
+l176
 L45
-VVhGTFifDMTAIlPS:biX^40
+VAQ2h8_<T<Pne879aRK?2Y3
 OE;C;6.2g;35
 31
 M2 ieee std_logic_1164
@@ -243,7 +243,7 @@ M1 ieee std_logic_arith
 o-93 -work ./work
 tExplicit 1
 Efpmul_stage2
-w1607186175
+w1607721303
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/fpuvhdl/multiplier/fpmul_stage2_struct.vhd
@@ -387,7 +387,7 @@ M1 ieee std_logic_unsigned
 o-93 -work ./work
 tExplicit 1
 Egen_2nd
-w1607158252
+w1607719745
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/fpuvhdl/multiplier/2nd_level.vhd
@@ -405,7 +405,7 @@ DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work gen_2nd SgLRHcOf>B9Hlc2=ElBXR2
 l58
 L40
-VUjd]Efg?XNe^4fINSjk0`3
+V;E2NHlmkJOz>AG56PgN1z1
 OE;C;6.2g;35
 31
 M2 ieee std_logic_1164
@@ -413,7 +413,7 @@ M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Egen_3rd
-w1607158254
+w1607719778
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/fpuvhdl/multiplier/3rd_level.vhd
@@ -431,7 +431,7 @@ DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work gen_3rd L:1M3Hm8IPMLQLg6`RMEg3
 l50
 L32
-VGS`fDF=aoKAS4P`10TE8c2
+VKH@Taghij9<1VJ]aDO5I21
 OE;C;6.2g;35
 31
 M2 ieee std_logic_1164
@@ -439,7 +439,7 @@ M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Egen_4th
-w1607158254
+w1607719798
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/fpuvhdl/multiplier/4th_level.vhd
@@ -457,7 +457,7 @@ DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work gen_4th 8Ai`SF3o]UzO84IAmV8G10
 l43
 L25
-VC8UX6I;?b?6b4kXV@=P[81
+V_ibb;];V0L^OT[_^jPCDb2
 OE;C;6.2g;35
 31
 M2 ieee std_logic_1164
@@ -465,7 +465,7 @@ M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Egen_5th
-w1607158255
+w1607719813
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/fpuvhdl/multiplier/5th_level.vhd
@@ -483,7 +483,7 @@ DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work gen_5th lz1P[Ng__8kl=b]UQ2@Hi3
 l38
 L20
-VA?5clWmeX`QHBIZ[ZnWff2
+Vz:Uj[>ngd`1[6VUh8b:1C2
 OE;C;6.2g;35
 31
 M2 ieee std_logic_1164
@@ -491,7 +491,7 @@ M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Egen_6th
-w1607158255
+w1607719826
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/fpuvhdl/multiplier/6th_level.vhd
@@ -509,7 +509,7 @@ DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work gen_6th IdBa?kL1eBInocZlck34k2
 l35
 L17
-VDgJ53fMeMzR6@M<GB@nbb0
+V@4QO>:[U_fe^N?P5>2iQ?1
 OE;C;6.2g;35
 31
 M2 ieee std_logic_1164
@@ -517,7 +517,7 @@ M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Eha
-w1607158257
+w1607189330
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/fpuvhdl/multiplier/half_adder.vhd
@@ -543,13 +543,13 @@ M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Embe
-w1607185986
+w1607678514
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/fpuvhdl/multiplier/MBE.vhd
 F../src/fpuvhdl/multiplier/MBE.vhd
 l0
-L8
+L5
 Vl9SN6coA:W4<TgB`CWaLV1
 OE;C;6.2g;35
 31
@@ -559,17 +559,30 @@ Astructural
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work mbe l9SN6coA:W4<TgB`CWaLV1
-l105
-L17
-VGDCXQQNF96aZ[oN1<gSnE2
+l102
+L14
+V342P1f]6S[z94LNnemIS40
 OE;C;6.2g;35
 31
 M2 ieee std_logic_1164
 M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
+Embe_mod
+w1607716863
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8../src/fpuvhdl/multiplier/MBE_mod.vhd
+F../src/fpuvhdl/multiplier/MBE_mod.vhd
+l0
+L5
+VgfozVmSl@M>ZcMGM^VARK0
+OE;C;6.2g;35
+31
+o-93 -work ./work
+tExplicit 1
 Emux51_generic
-w1607179333
+w1607189330
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/fpuvhdl/multiplier/mux51.vhd
@@ -647,7 +660,7 @@ M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Etb_fpmul
-w1606232249
+w1607720934
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/fpuvhdl/tb/TB_fpmultiplier.vhd
@@ -665,7 +678,7 @@ DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work tb_fpmul gEOZ[kA=lG]k5?^JgMY[a3
 l45
 L8
-VB:MFN>hT;:67<He>LP8gz2
+VQziR`QD5ePf`Y=;1j8`Vf2
 OE;C;6.2g;35
 31
 M2 ieee std_logic_1164
